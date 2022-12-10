@@ -1,0 +1,30 @@
+.box-1 {
+  border: 4px solid gray;
+  margin: 100px;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.box-caract h2 {
+  color: red;
+}
+.box-caract p {
+  color: gray;
+}
+
+.box-2 {
+  background-color: white;
+  border: 14px solid red;
+  margin: 40px;
+  color: black;
+  box-shadow: 4px green;
+}
+.box-2 h3 {
+  text-align: center;
+}
+
+/*# sourceMappingURL=01styles.css.map */

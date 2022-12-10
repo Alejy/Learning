@@ -1,0 +1,17 @@
+//Antes de poder modificar los valores debemos importar los siguientes modulos
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/mixins";
+
+//Podemos modificar las variables antes de importar boostrap para modificar los parametros en este añadir un color nuevo al thema.
+
+$custom-colors: (
+    "custom-color":red
+);
+//mezclamos el color custom y los temas por default. y ahora podemos utilizarlo como nombre en las clases
+$theme-colors: map-merge($theme-colors, $custom-colors );
+
+
+
+//Importamos bootstrap, podemos importar los modulos especificos que vayamos a necesitar
+@import "./node_modules/bootstrap/scss/bootstrap.scss";

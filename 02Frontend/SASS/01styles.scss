@@ -1,0 +1,43 @@
+//Esto es un comentario en sass
+
+//Podemos unificar varios archivos scss en uno. Este modulo se encarga de dar estilo a BOX1
+@use 'modul01';
+
+//Variables que podemos utilizar despues
+$color-background: black;
+$color-leters: white;
+$font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+body{
+    background-color: $color-background;
+    color: $color-leters;
+    font-family: $font-family;
+}
+
+//Anidar codigo
+.box-caract{
+    h2{
+        color: red;
+    }
+    p{
+        color: gray
+    }
+}
+
+//Creacion de funciones y operaciones en SASS
+
+@mixin box-default($margin: 20px){
+    background-color: white;
+    border: 4px + 10px solid red; //Operadores se puede sumar 4px + 10px, divisiones restas...
+    margin: $margin;
+    color: black;
+    box-shadow: 4px green;
+
+}
+
+.box-2{
+    @include box-default($margin: 40px);
+    h3{
+        text-align:center;
+    }
+}
