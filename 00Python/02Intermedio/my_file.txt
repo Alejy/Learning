@@ -1,6 +1,0 @@
-Mi nombre es ALejandro
-Mi apellido es Alonso
-32 Años
-Mi lenguaje preferido es Python
-Ahora manejo git tambien
-Me gusta el Pan
